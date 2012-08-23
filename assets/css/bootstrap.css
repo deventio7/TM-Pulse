@@ -5629,7 +5629,7 @@ a.badge:hover {
 }
 
 .navbar-inverse .nav > li > a:hover , .navbar-inverse .brand:hover{
-	color : #000;
+	color : #999;
 }
 
 .navbar ul {
