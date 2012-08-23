@@ -4417,12 +4417,12 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar-inverse .navbar-inner {
-  background-color: #367588;
-  background-image: -moz-linear-gradient(top, teal, #367588);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(teal), to(#367588));
-  background-image: -webkit-linear-gradient(top, teal, #367588);
-  background-image: -o-linear-gradient(top, #222222, #367588);
-  background-image: linear-gradient(to bottom, #222222, #367588);
+  background-color: teal;
+  background-image: -moz-linear-gradient(top, teal, teal);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(teal), to(teal));
+  background-image: -webkit-linear-gradient(top, teal, teal);
+  background-image: -o-linear-gradient(top, teal, teal);
+  background-image: linear-gradient(to bottom, teal, teal);
   background-repeat: repeat-x;
   border-color: #252525;
   filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
@@ -4449,11 +4449,11 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav .active > a:hover,
 .navbar-inverse .nav .active > a:focus {
   color: #ffffff;
-  background-image: -moz-linear-gradient(top, teal, #367588);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(teal), to(#367588));
-  background-image: -webkit-linear-gradient(top, teal, #367588);
-  background-image: -o-linear-gradient(top, #222222, #367588);
-  background-image: linear-gradient(to bottom, #222222, #367588);
+  background-image: -moz-linear-gradient(top, #367588, #367588);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#367588), to(#367588));
+  background-image: -webkit-linear-gradient(top, #367588, #367588);
+  background-image: -o-linear-gradient(top, #367588, #367588);
+  background-image: linear-gradient(to bottom, #367588, #367588);
   background-repeat: repeat-x;
 }
 
@@ -5629,33 +5629,24 @@ a.badge:hover {
 }
 
 .navbar-inverse .nav > li > a:hover , .navbar-inverse .brand:hover{
-	color : #999;
+	color : #000;
 }
 
+.navbar-inverse .nav > li > a:active, .navbar-inverse .brand:active {
+
+	background-image: -moz-radial-gradient(white, teal, teal);
+	background-image: -webkit-gradient(radial, center center, 0, center center, 220, from(white), to(teal)); /* old */
+	background-image: -webkit-radial-gradient(white, teal, teal); /* new syntax */
+	background-image: radial-gradient(white, teal, teal);
+
+
+}
+
+.navbar-inverse .nav > li > a, .navbar-inverse .brand {
+	font-weight : bold;
+}
 .navbar ul {
 	list-style: none;
 	color : #fff;
 	margin: 0;
 }
-.navbar li ul {
-	display : none;
-	position : absolute;
-}
-.navbar li:hover ul {
-	display : block;
-}
-.navbar li li a {
-	display: block;
-	background-color : #fff;
-	border: 1px solid #f9f9f9;
-	padding: .5em;
-}
-.navbar li li {
-	float: none;
-	border-bottom: 1px solid #ccc;
-}
-.navbar li li a {
-	border: 0;
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
-} 
