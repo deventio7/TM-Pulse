@@ -4430,7 +4430,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-inverse .brand,
 .navbar-inverse .nav > li > a {
-  color: #999999;
+  color: #fff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -5627,3 +5627,35 @@ a.badge:hover {
 .affix {
   position: fixed;
 }
+
+.navbar-inverse .nav > li > a:hover , .navbar-inverse .brand:hover{
+	color : #000;
+}
+
+.navbar ul {
+	list-style: none;
+	color : #fff;
+	margin: 0;
+}
+.navbar li ul {
+	display : none;
+	position : absolute;
+}
+.navbar li:hover ul {
+	display : block;
+}
+.navbar li li a {
+	display: block;
+	background-color : #fff;
+	border: 1px solid #f9f9f9;
+	padding: .5em;
+}
+.navbar li li {
+	float: none;
+	border-bottom: 1px solid #ccc;
+}
+.navbar li li a {
+	border: 0;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+} 
