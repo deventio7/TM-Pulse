@@ -59,7 +59,55 @@
     <div class="container">
 
       <h1 class="roadmapTitle">Roadmap</h1>
-      <p>Coming soon!</p>
+      <div id="timeline-centre" class="rounded-cell light green"></div>
+      <ul id="timeline-list">
+		<li class="elementLeft"><img src="./assets/img/500x360.gif"></li>
+		<li class="elementRight"><img src="./assets/img/500x360.gif"></li>
+		<li class="elementLeft"><img src="./assets/img/500x360.gif"></li>
+		<li class="elementRight"><img src="./assets/img/500x360.gif"></li>
+		<li class="elementLeft"><img src="./assets/img/500x360.gif"></li>
+		<li class="elementRight"><img src="./assets/img/500x360.gif"></li>
+		<li class="elementLeft"><img src="./assets/img/500x360.gif"></li>
+	  </ul>
+
+    </div> <!-- /container -->
+	<style type="text/css">
+		#timeline-centre {
+			margin: 0 0 0 -5px;
+			position: absolute;
+			left: 50%;
+			display : block;
+			background: #D9F9CD;
+			align : center;
+			width : 10px;
+			height : 1500px;
+			border-radius: 7px;
+			-webkit-border-radius: 7px;
+			-moz-border-radius: 7px;
+			padding: 10px;
+		}
+		.roadmapTitle {
+			text-align : center;
+			padding-bottom : 20px;
+		}
+		ul {
+			list-style : none;
+		}
+		.elementLeft {
+			display : block;
+			float : left;
+		}
+		.elementRight {
+			display : block;
+			position : relative;
+			float : right;
+			top : 180px;
+		}
+		.elementLeft, .elementRight {
+			padding-top : 0px;
+			padding-bottom : 40px;
+		}
+	</style>
 
     </div> <!-- /container -->
     
