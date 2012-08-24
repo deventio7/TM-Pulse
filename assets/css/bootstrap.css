@@ -162,7 +162,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #367588;
+  background-color: #91d4e6;
 }
 
 a {
@@ -4449,11 +4449,11 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav .active > a:hover,
 .navbar-inverse .nav .active > a:focus {
 	color: #000;
-	background-image: -moz-linear-gradient(top, #367588, #367588);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#367588), to(#367588));
-	background-image: -webkit-linear-gradient(top, #367588, #367588);
-	background-image: -o-linear-gradient(top, #367588, #367588);
-	background-image: linear-gradient(to bottom, #367588, #367588);
+	background-image: -moz-linear-gradient(top, #91d4e6, #91d4e6);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#91d4e6), to(#91d4e6));
+	background-image: -webkit-linear-gradient(top, #91d4e6, #91d4e6);
+	background-image: -o-linear-gradient(top, #91d4e6, #91d4e6);
+	background-image: linear-gradient(to bottom, #91d4e6, #91d4e6);
 	background-repeat: repeat-x;
 }
 
@@ -5638,13 +5638,10 @@ a.badge:hover {
 }
 
 .navbar-inverse .nav > li > a:active, .navbar-inverse .brand:active {
-
-	background-image: -moz-radial-gradient(white, teal, teal);
-	background-image: -webkit-gradient(radial, center center, 0, center center, 220, from(white), to(teal)); /* old */
-	background-image: -webkit-radial-gradient(white, teal, teal); /* new syntax */
-	background-image: radial-gradient(white, teal, teal);
-
-
+	background-image: -moz-radial-gradient(white, #91d4e6, #91d4e6);
+	background-image: -webkit-gradient(radial, center center, 0, center center, 220, from(white), to(#91d4e6)); /* old */
+	background-image: -webkit-radial-gradient(white, #91d4e6, #91d4e6); /* new syntax */
+	background-image: radial-gradient(white, #91d4e6, #91d4e6);
 }
 
 .navbar-inverse .nav > li > a, .navbar-inverse .brand {
