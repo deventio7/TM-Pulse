@@ -58,13 +58,57 @@
 
     <div class="container">
 
-      <h1>Roadmap</h1>
-      <ul id="timeline-centre">
-		<li><img src="http://placehold.it/300x180"></li>
-
+      <h1 class="roadmapTitle">Roadmap</h1>
+	  <div id="timeline-centre" class="rounded-cell light green"></div>
+      <ul id="timeline-list">
+		<li class="elementLeft"><img src="http://placehold.it/500x360"></li>
+		<li class="elementRight"><img src="http://placehold.it/500x360"></li>
+		<li class="elementLeft"><img src="http://placehold.it/500x360"></li>
+		<li class="elementRight"><img src="http://placehold.it/500x360"></li>
+		<li class="elementLeft"><img src="http://placehold.it/500x360"></li>
+		<li class="elementRight"><img src="http://placehold.it/500x360"></li>
+		<li class="elementLeft"><img src="http://placehold.it/500x360"></li>
+	  </ul>
 
     </div> <!-- /container -->
-
+	<style type="text/css">
+		#timeline-centre {
+			margin: 0 0 0 -5px;
+			position: absolute;
+			left: 50%;
+			top : 140px;
+			display : block;
+			float : left, right;
+			background: #D9F9CD;
+			align : center;
+			width : 10px;
+			height : 1500px;
+			border-radius: 7px;
+			-webkit-border-radius: 7px;
+			-moz-border-radius: 7px;
+			padding: 10px;
+		}
+		.roadmapTitle {
+			text-align : center;
+		}
+		ul {
+			list-style : none;
+		}
+		.elementLeft {
+			display : block;
+			float : left;
+		}
+		.elementRight {
+			display : block;
+			position : relative;
+			float : right;
+			top : 180px;
+		}
+		.elementLeft, .elementRight {
+			padding-top : 20px;
+			padding-bottom : 20px;
+		}
+	</style>
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
