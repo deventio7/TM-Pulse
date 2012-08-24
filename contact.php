@@ -130,7 +130,7 @@ $headers = 'From: '.$email_from."\r\n".
 'X-Mailer: PHP/' . phpversion();
 @mail($email_to, $email_subject, $email_message, $headers); 
 ?>
-Thank you for writing to us. We will be in touch with you as soon as possible.
+<div class="messagetext">Thank you for writing to us. We will be in touch with you as soon as possible.</div><br /><br />
  
  
 <?php
@@ -139,7 +139,7 @@ Thank you for writing to us. We will be in touch with you as soon as possible.
 
       <h1>Contact Us</h1>
       <p>TechMedical Incorporated would love to hear any comments or suggestions.</p>
-      <p>Please call 1-519-749-5498 or use this email form to contact us.</p><br />
+      <p>Please call <strong>1-519-749-5498</strong> or use this email form to contact us.</p><br />
       <p><form name="contactform" method="post" action="contact.php">
 <table width="450px">
 <tr>
