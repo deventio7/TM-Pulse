@@ -140,7 +140,7 @@ $headers = 'From: '.$email_from."\r\n".
       <h1>Contact Us</h1>
       <p>TechMedical Incorporated would love to hear any comments or suggestions.</p>
       <p>Please call <strong>1-519-749-5498</strong> or use this email form to contact us.</p><br />
-      <p><form name="contactform" method="post" action="contact.php">
+      <form name="contactform" method="post" action="contact.php">
 <table width="450px">
 <tr>
  <td valign="top">
@@ -151,7 +151,7 @@ $headers = 'From: '.$email_from."\r\n".
  </td>
 </tr>
 <tr>
- <td valign="top"">
+ <td valign="top">
   <label for="last_name">Last Name *</label>
  </td>
  <td valign="top">
@@ -188,7 +188,7 @@ $headers = 'From: '.$email_from."\r\n".
  </td>
 </tr>
 </table>
-</form></p>
+</form>
 
     </div> <!-- /container -->
 
