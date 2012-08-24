@@ -72,7 +72,7 @@ if(isset($_POST['email'])) {
         echo "These errors appear below.<br /><br />";
         echo $error."<br /><br />";
         echo "Please ";
-	echo "<a href='".$_SERVER['PHP_SELF']."'>Go Back</a>";
+	echo "<a href=\"javascript:history.go(-1)\">Go Back</a>";
 	echo " and fix these errors.<br /><br />";
         die();
     }
@@ -138,6 +138,8 @@ Thank you for writing to us. We will be in touch with you as soon as possible.
 ?>
 
       <h1>Contact Us</h1>
+      <p>TechMedical Incorporated would love to hear any comments or suggestions.</p>
+      <p>Please call 1-519-749-5498 or use this email form to contact us.</p><br />
       <p><form name="contactform" method="post" action="contact.php">
 <table width="450px">
 <tr>
@@ -181,8 +183,8 @@ Thank you for writing to us. We will be in touch with you as soon as possible.
  </td>
 </tr>
 <tr>
- <td colspan="2" style="text-align:center">
-  <input type="submit" value="Submit"> 
+<td></td>
+ <td colspan="2" style="text-align:left"><input type="submit" value="Submit"> 
  </td>
 </tr>
 </table>
