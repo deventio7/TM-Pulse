@@ -136,62 +136,139 @@ $headers = 'From: '.$email_from."\r\n".
 <?php
 }
 ?>
-
       <h1>Contact Us</h1>
       <p>TechMedical Incorporated would love to hear any comments or suggestions.</p>
       <p>Please call <strong>1-519-749-5498</strong> or use this email form to contact us.</p><br />
-      <form name="contactform" method="post" action="contact.php">
-<table width="450px">
-<tr>
- <td valign="top">
-  <label for="first_name">First Name *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="first_name" maxlength="50" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="last_name">Last Name *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="last_name" maxlength="50" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="email">Email Address *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="email" maxlength="80" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="telephone">Telephone Number</label>
- </td>
- <td valign="top">
-  <input  type="text" name="telephone" maxlength="30" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="comments">Comments *</label>
- </td>
- <td valign="top">
-  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
- </td>
-</tr>
-<tr>
-<td></td>
- <td colspan="2" style="text-align:left"><input type="submit" value="Submit"> 
- </td>
-</tr>
-</table>
-</form>
-
+      <form class="mobile" name="contactform" method="post" action="contact.php">
+	    <table width="450px">
+  	      <tr>
+			<td valign="top">
+			  <label for="first_name">First Name *</label>
+			</td>
+		  <tr>
+		  </tr>
+			<td valign="top">
+			  <input type="text" name="first_name" maxlength="50" size="30">
+			</td>
+		  </tr>
+		  <tr>
+			<td valign="top">
+			  <label for="last_name">Last Name *</label>
+			</td>
+		  <tr>
+		  </tr>
+			<td valign="top">
+			  <input type="text" name="last_name" maxlength="50" size="30">
+			</td>
+		  </tr>
+		  <tr>
+			<td valign="top">
+			  <label for="email">Email Address *</label>
+			</td>
+		  <tr>
+		  </tr>
+			<td valign="top">
+			  <input type="text" name="email" maxlength="80" size="30">
+			</td>
+		  </tr>
+		  <tr>
+			<td valign="top">
+			  <label for="telephone">Telephone Number</label>
+			</td>
+		  <tr>
+		  </tr>
+			<td valign="top">
+			  <input type="text" name="telephone" maxlength="30" size="30">
+			</td>
+		  </tr>
+		  <tr>
+			<td valign="top">
+			  <label for="comments">Comments *</label>
+			</td>
+		  <tr>
+		  </tr>
+			<td valign="top">
+			  <textarea name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+			</td>
+		  </tr>
+		  <tr>
+			<td colspan="2" style="text-align:left">
+			  <input type="submit" value="Submit"> 
+			</td>
+		  </tr>
+		</table>
+	  </form>
+	  
+	  
+	  <form class="desktop" name="contactform" method="post" action="contact.php">
+	    <table width="450px">
+  	      <tr>
+			<td valign="top">
+			  <label for="first_name">First Name *</label>
+			</td>
+			<td valign="top">
+			  <input type="text" name="first_name" maxlength="50" size="30">
+			</td>
+		  </tr>
+		  <tr>
+			<td valign="top">
+			  <label for="last_name">Last Name *</label>
+			</td>
+			<td valign="top">
+			  <input type="text" name="last_name" maxlength="50" size="30">
+			</td>
+		  </tr>
+		  <tr>
+			<td valign="top">
+			  <label for="email">Email Address *</label>
+			</td>
+			<td valign="top">
+			  <input type="text" name="email" maxlength="80" size="30">
+			</td>
+		  </tr>
+		  <tr>
+			<td valign="top">
+			  <label for="telephone">Telephone Number</label>
+			</td>
+			<td valign="top">
+			  <input type="text" name="telephone" maxlength="30" size="30">
+			</td>
+		  </tr>
+		  <tr>
+			<td valign="top">
+			  <label for="comments">Comments *</label>
+			</td>
+			<td valign="top">
+			  <textarea name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+			</td>
+		  </tr>
+		  <tr>
+			<td></td>
+			<td colspan="2" style="text-align:left">
+			  <input type="submit" value="Submit"> 
+			</td>
+		  </tr>
+		</table>
+	  </form>
     </div> <!-- /container -->
-
+	<style type="text/css">
+	  @media (max-width: 979px) {
+	    .mobile {
+		display : block;
+		}
+		.desktop {
+		display : none;
+		}
+	  }
+	  @media (min-width: 980px) {
+	    .mobile {
+		display : none;
+		}
+		.desktop {
+		display : block;
+		}
+	  }
+	</style>
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
