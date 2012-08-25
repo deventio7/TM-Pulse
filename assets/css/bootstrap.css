@@ -5638,10 +5638,10 @@ a.badge:hover {
 }
 
 .navbar-inverse .nav > li > a:active, .navbar-inverse .brand:active {
-	background-image: -moz-radial-gradient(white, #91d4e6, #91d4e6);
-	background-image: -webkit-gradient(radial, center center, 0, center center, 220, from(white), to(#91d4e6)); /* old */
-	background-image: -webkit-radial-gradient(white, #91d4e6, #91d4e6); /* new syntax */
-	background-image: radial-gradient(white, #91d4e6, #91d4e6);
+	background-image: -moz-radial-gradient(white, #999, #999);
+	background-image: -webkit-gradient(radial, center center, 0, center center, 220, from(white), to(#999)); /* old */
+	background-image: -webkit-radial-gradient(white, #999, #999); /* new syntax */
+	background-image: radial-gradient(white, #999, #999);
 }
 
 .navbar-inverse .nav > li > a, .navbar-inverse .brand {
