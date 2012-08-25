@@ -5679,4 +5679,6 @@ a.badge:hover {
 .profiles {
 	font-size : 36px;
 	line-height: 150%;
+	padding-top: 2em;
+	padding-bottom: 1em;
 }
