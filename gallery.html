@@ -10,6 +10,8 @@
 
     <!-- Le styles -->
     <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/nivo/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="./assets/nivo/nivo-slider.css" type="text/css" media="screen" />
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -59,15 +61,39 @@
     <div class="container">
 
       <h1>Gallery</h1>
-      <p>Coming soon!</p>
+              <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <a href="#"><img src="./assets/img/gal1.jpg" data-thumb="./assets/img/gal1_thumb.png" alt="" title="TM-Pulse (Scale Component), Isometric view"/></a>
+                <a href="#"><img src="./assets/img/gal2.jpg" data-thumb="./assets/img/gal2_thumb.png" alt="" title="TM-Pulse (Scale Component), Top view"/></a>
+                <a href="#"><img src="./assets/img/gal3.jpg" data-thumb="./assets/img/gal3_thumb.png" alt="" title="TM-Pulse (Wristband Component), Potential candidate 1"/></a>
+                <a href="#"><img src="./assets/img/gal4.jpg" data-thumb="./assets/img/gal4_thumb.png" alt="" title="TM-Pulse (Wristband Component), Potential candidate 2"/></a>
+                <a href="#"><img src="./assets/img/gal5.jpg" data-thumb="./assets/img/gal5_thumb.png" alt="" title="TechMedical Incorporated Team at Lakehead University"/></a>
+                <a href="#"><img src="./assets/img/gal6.jpg" data-thumb="./assets/img/gal6_thumb.png" alt="" title="TechMedical Incorporated Team at Lakehead Residence"/></a>
+            </div>
+        </div>
 
 
     </div> <!-- /container -->
 
+    <style>
+    .slider-wrapper { 
+	width: 80%; 
+	margin: 100px auto;
+}
+</style>
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./assets/js/jquery.js"></script>
 	<script src="./assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    $('#slider').nivoSlider({
+    controlNavThumbs:true
+});
+    </script>
   </body>
 </html>
